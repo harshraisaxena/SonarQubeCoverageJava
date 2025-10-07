@@ -18,7 +18,7 @@ jobs:
     - name: build the java code
       run: mvn clean install package
     - name: upload artifact form runner github repo
-      uses: action/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
        name: jacoco
-       file: /home/runner/work/SonarQubeCoverageJava/SonarQubeCoverageJava/target/jacoco.exec
+       path: /home/runner/work/SonarQubeCoverageJava/SonarQubeCoverageJava/target/jacoco.exec
